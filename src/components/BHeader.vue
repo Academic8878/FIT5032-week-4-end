@@ -1,18 +1,42 @@
 <template>
-  <!-- Using Bootstrap's Header template (starter code) -->
-  <!-- https://getbootstrap.com/docs/5.0/examples/headers/ -->
   <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">Home (Week 4)</a>
+          <RouterLink to="/" class="nav-link" active-class="active" aria-current="page">
+            Home (Week 4)
+          </RouterLink>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+        <li class="nav-item">
+          <RouterLink to="/about" class="nav-link" active-class="active">
+            About
+          </RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink to="/contact-us" class="nav-link" active-class="active">
+            Contact us
+          </RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink to="/FireLogin" class="nav-link" active-class="active">
+            Firebase Sign In
+          </RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink to="/FireRegister" class="nav-link" active-class="active">
+            Register
+          </RouterLink>
+        </li>
       </ul>
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'BHeader'
+}
+</script>
 
 <style scoped>
 .b-example-divider {
