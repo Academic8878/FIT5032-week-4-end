@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import FirebaseSigninView from '../views/FirebaseSigninView.vue'
-import FirebaseRegisterView from '../views/FirebaseRegisterView.vue'  // 导入注册组件
+import FirebaseRegisterView from '../views/FirebaseRegisterView.vue'
+import LogoutView from '../views/LogoutView.vue'
+import AddBookView from '../views/AddBookView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,9 +32,19 @@ const router = createRouter({
       component: FirebaseSigninView
     },
     {
-      path: '/FireRegister',  // 新增注册路由
+      path: '/FireRegister',
       name: 'FireRegister',
       component: FirebaseRegisterView
+    },
+    {
+      path: '/logout',
+      name: 'Logout',
+      component: LogoutView
+    },
+    {
+      path: '/addbook',
+      name: 'AddBook',
+      component: AddBookView
     }
   ]
 })

@@ -27,6 +27,16 @@
             Register
           </RouterLink>
         </li>
+        <li class="nav-item">
+          <RouterLink to="/logout" class="nav-link" active-class="active">
+            Logout
+          </RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink to="/addbook" class="nav-link" active-class="active">
+            Add Book
+          </RouterLink>
+        </li>
       </ul>
     </header>
   </div>
