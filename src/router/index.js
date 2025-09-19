@@ -3,6 +3,7 @@ import FirebaseSigninView from '../views/FirebaseSigninView.vue'
 import FirebaseRegisterView from '../views/FirebaseRegisterView.vue'
 import LogoutView from '../views/LogoutView.vue'
 import AddBookView from '../views/AddBookView.vue'
+import GetBookView from '../views/GetBookView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +46,11 @@ const router = createRouter({
       path: '/addbook',
       name: 'AddBook',
       component: AddBookView
+    },
+    {
+      path: '/getbook',
+      name: 'GetBook',
+      component: GetBookView
     }
   ]
 })

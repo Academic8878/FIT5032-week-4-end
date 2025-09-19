@@ -37,6 +37,11 @@
             Add Book
           </RouterLink>
         </li>
+        <li class="nav-item">
+          <RouterLink to="/getbook" class="nav-link" active-class="active">
+            Manage Books
+          </RouterLink>
+        </li>
       </ul>
     </header>
   </div>
